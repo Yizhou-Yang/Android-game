@@ -1,0 +1,14 @@
+How to Use the database
+
+There are 2 different main ways to change user data
+1. Using User Class:
+    So at the start of your game, you will be given a username in the intent.
+    Create a UserDatabaseHelper object (lets call it db) and then use User user = db.getUser(username) to get a User object
+    Any and all changes during the game should be made to the User object user not the database
+    So if you kill a monster and want to add a monster killed then call user.addMonstersKilled(...) not the database update method
+    This is because the User class is responsible for the short term updating.
+
+2. Using Database Class:
+    After you have finished a checkpoint in the game or something and you want to save the game, then use the UserDatabaseHelper object db
+    Use db.updateUser(user) to save it.
+

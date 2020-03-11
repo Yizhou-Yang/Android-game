@@ -1,0 +1,19 @@
+Explanation
+1. There are two different database types here.
+    The long term storage ( for user resources, monsters killed etc) - done with SQLite
+    The short term storage (for most recently logged in user and passwords) - SharedPreferences
+    Passwords have been kept in SharedPreferences to protect from SQL Injection and other issues with SQL databases being saved locally on the phone
+2. The User Class has been created to provide an easily interpretable object to change data of a user and commit changes
+   This also means that if I want to change the SQLite Database to a ROOM database later, it can be done with no changes needed for any code outside the DatabaseSystem
+------------------------------------------
+Status at Creation-
+UserDatabaseHelper - SQL Database for long term data
+    This will include last level data
+LoginDatabaseHelper - SharedPreferences for short term data
+    Created this so that if I want to change the way the login data management works I don't need to touch the LoginSystem
+-----------------------------------------
+Commit -1
+1. Consider Using a User Class that can only be instantiated using a Cursor and then instead of relying on an ArrayList, pass the User around
+
+------------------------------------------
+Expansion

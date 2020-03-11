@@ -1,0 +1,18 @@
+Explanation of structure
+1. This stores the front end for the login system.
+2. FrontEndUtility is separated so that neither of the activities have to implement to many functions like string checking
+3. Otherwise the Activities are separated by the SOLID principles so that none has to do more than one thing
+4. Testing activity is just for my own testing and I have not deleted it as it will be useful in phase 2
+5. Note how there are no assumptions in any activity on how the user is implemented or how they are stored in the database
+    This means that we can make changes to the database structure in any way and as long as we keep the public API the same there will be no issue.
+------------------------------------------------------------------
+Status At Creation -
+Activities - Login, Register, Testing (Not for deployment)
+Classes - FrontEndUtility.java (Contains utility methods)
+Full Implementation Complete
+
+-----------------------------------------------------------------
+Expansion Ideas
+1. Better XML Layouts / Possibly a graphic background with animated buttons
+2. Consider completely discarding SharePreferences for UserDatabaseHelper even with password.
+3. Alternately consider encrypting password with hash encoding

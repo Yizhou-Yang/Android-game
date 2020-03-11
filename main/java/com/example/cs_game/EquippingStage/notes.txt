@@ -1,0 +1,10 @@
+Explanation:
+
+This is a simple stage for equipping and un-equipping of Equipments (Weapons or Armors currently)
+in inventory.
+This package contains only the presenter, view, and activity for equipping.
+
+EquipmentActivity: Class in which logic of equipping and un-equipping are all implemented
+EquipView: Interface for View part of MVP
+EquipmentPresenter: Presenter for EquipView
+

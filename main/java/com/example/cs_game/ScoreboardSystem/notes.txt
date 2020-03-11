@@ -1,0 +1,3 @@
+Scoreboard System plan
+    c. User can sort
+    d. There will be one global leaderboard

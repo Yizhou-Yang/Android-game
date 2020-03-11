@@ -1,0 +1,14 @@
+This is the character module.
+It should store everything relating to the inner functionality of the character class, as well as all
+of it's submodules and managers.
+
+Current Modules inside CharacterSystem
+-BodyPartStuff : handles stuff with body parts in the character
+-CharacterStuff : handles the main character class and it's subclasses
+-Death : handles everything relating to the death of the character
+-Item : handles everything relating to the inventory of the character
+-Observer : object to allow traits to interact with the rest of the character
+-TraitStuff : module to manage traits inside the character
+
+Classes
+CharacterStuffBuilder : a class with static functions to help generate parts of the combat.

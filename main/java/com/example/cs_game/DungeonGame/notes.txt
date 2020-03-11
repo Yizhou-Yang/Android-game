@@ -1,0 +1,56 @@
+Explanation
+
+The dungeon game is a game where you navigate through a screen, collecting resources, and dodging enemies.
+If you get killed by an enemy (a bat in the dungeon), your resources are reset to zero and the level ends.
+To make the game more challenging, new bats spawn in random locations every few turns.
+
+Customisations you can make to this level are -
+- You can choose the size of the screen, which changes the number of resources and the number of bats at
+the beginning of the level.
+- You can choose the difficulty of the level, which changes the number of turns in which new bats spawn
+- You can choose what resource you collect - pizzas or donut
+
+As for the design, class DungeonGameView is the class that creates the UI and draws everything to be displayed
+on the canvas. DungeonGameActivity is the backend, where all the storage and calculations take place.
+DungeonMainThread handles the game thread.
+Additionally, DungeonGameHero and DungeonGameEnemy are subclasses of DungeonGameCharacter, keeping the options
+of having more characters in the game open.
+DungeonResource and DungeonExit are subclasses of DungeonItem, and I would like to have walls in the game
+for phase 2, which will also be DungeonItems.
+
+-----------------------------
+Status at Creation
+Earlier quadrant touch controls in dungeongame, now made it touch controls around the knight.
+Added system to pick up resources as the knight is moving.
+Created the Intermediary Activity with user settings for customization.
+
+------------------------------
+To Do
+1. Create Intermediary Landing Activity to get user preferences for customization
+2.
+-------------------------------
+Expansion
+
+-------------------------------
+Earlier hero death was too specific and hero was not picking up resources efficiently. Fixed that
+by specifying a range of quadrants in which resources are picked up or hero dies
+-------------------------------
+Added the exit door and system for hero to either die or exit. Either event causes game to stop and
+new screen showing number of resources collected comes up. If hero dies number of resources is 0.
+-------------------------------
+Increased resource collection sensitivity and door reaching sensitivity
+-------------------------------
+Implemented home button behaviour
+-------------------------------
+Optimised the number of turns a new enemy spawns in to make game playable
+-------------------------------
+Made menu screens look nicer
+------------------------------
+Added audio
+-----------------------------
+Walls function from all directions
+
+
+things to do -
+
+- make the infinity mode

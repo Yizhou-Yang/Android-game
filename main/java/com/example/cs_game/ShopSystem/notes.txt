@@ -1,0 +1,14 @@
+Explanation:
+
+This package contains all classes and interfaces related to shop's system.
+Items and other objects unrelated to the system should not belong in this package.
+
+At this shop stage, users can buy items from shop or sell their items.
+
+OnItemClickListener - Listener for whenever items in shop or inventory is clicked.
+ShopView - The View part of the MVP, in which methods for preparations of shop activity is listed
+ShopPresenter - The presenter of the activity, which simply calls all ShopView's methods
+
+ShopActivity - the implementations of ShopView's methods to show appropriately on the screen
+ShopItemAdapter - the currentItem adapter for showing the currentItem on the currentItem list on screen
+ShopItemsManager - shop currentItem generator
